@@ -1,0 +1,25 @@
+# Respostas da tesouraria às pendências. Os códigos (L00123, P2…) saem de `agente.py pendencias`.
+# Toda correção precisa de `resposta`: o que a pessoa respondeu, com as palavras dela.
+
+base_revisao: 2           # REVnn importada: os códigos L… abaixo são dela
+saldo_inicial: 0          # saldo (banco + espécie) antes do primeiro lançamento
+
+lancamentos:
+  L00123:
+    resposta: "Foi a oferta do culto de quarta, R$ 120 no Pix"
+    valor: 120.00
+    status: confirmado    # confirmado | pendente | divergencia
+  L00456:
+    resposta: "Lançado em dobro, o certo é o de 30/06"
+    remover: true         # sai da planilha, mas fica registrado aqui
+
+novos:                    # acrescente sempre no fim da lista (a posição vira o código R0001, R0002…)
+  - resposta: "Teve oferta de R$ 50 em dinheiro no dia 04/06 que não foi anotada"
+    data: 2025-06-04
+    tipo: Entrada
+    descricao: "Oferta – culto (dinheiro)"
+    valor: 50
+    forma: Dinheiro       # Dinheiro | Cartão | Pix | Débito em conta | Transferência | Não informado
+
+perguntas:
+  P2: "Os dois Pix de R$ 500 foram adiantamento de prebenda"

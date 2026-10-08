@@ -1,0 +1,22 @@
+# Fotos da agenda já lidas. A chave é o nome do arquivo, como aparece em `agente.py fotos`.
+fotos:
+  00000001-PHOTO-2025-01-05-20-00-00.jpg:
+    situacao: transcrita      # transcrita | ilegivel | sem_lancamento | ja_lancada
+    observacao: "Página com dois dias de janeiro"
+    lancamentos:
+      - data: 2025-01-08
+        tipo: Entrada
+        descricao: "Oferta – culto (dinheiro)"
+        valor: 45.00
+        forma: Dinheiro
+        certeza: alta         # alta → 🟢 ; baixa → 🟡 "leitura incerta"
+      - data: 2025-01-11
+        tipo: Saída
+        descricao: "Limpeza – material"
+        valor: 32.90
+        forma: Dinheiro
+        certeza: baixa
+        observacao: "O 9 pode ser 0"
+  00000002-PHOTO-2025-01-12-20-00-00.jpg:
+    situacao: ilegivel
+    observacao: "Foto tremida, só dá para ler a data"

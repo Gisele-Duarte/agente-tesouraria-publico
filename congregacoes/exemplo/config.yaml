@@ -1,0 +1,8 @@
+# Configuração de uma congregação (copie esta pasta para congregacoes/<nome>/).
+# Ao importar uma planilha, este arquivo é preenchido sozinho.
+nome: Congregação Exemplo
+regras:
+  repasse_sede: 0.20   # 20% das entradas do mês vão para a igreja sede
+  prebenda: 0.20       # 20% para a prebenda pastoral; o resto (60%) fica com a igreja local
+saldo_inicial: null    # saldo antes do 1º lançamento; null = ainda não informado
+revisao_base: 0        # número da última revisão (REVnn) usada como base

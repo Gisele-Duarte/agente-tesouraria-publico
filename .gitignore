@@ -1,0 +1,17 @@
+# Ambiente
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dados da igreja: NUNCA versionar (nomes de membros, valores, comprovantes, fotos)
+congregacoes/*
+!congregacoes/exemplo/
+*.xlsx
+*.zip
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.tmp
